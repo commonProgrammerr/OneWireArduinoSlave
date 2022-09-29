@@ -23,7 +23,7 @@
 
 #if (defined __AVR_ATtiny25__ || defined  __AVR_ATtiny45__ || defined  __AVR_ATtiny85__)
 #define OW_ATTINY25
-#include "UserTimer.h" //ATtiny-support based on TinyCore1 Arduino-core for ATtiny at http://github.com/Coding-Badly/TinyCore1.git
+#include <UserTimer.h> //ATtiny-support based on TinyCore1 Arduino-core for ATtiny at http://github.com/Coding-Badly/TinyCore1.git
 #define LIBCALL_ENABLEINTERRUPT
 #include "EnableInterrupt.h"
 __attribute__((always_inline)) static inline void UserTimer_Init( void )
